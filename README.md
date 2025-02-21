@@ -1,1 +1,1 @@
-# Theatre-seats
+This code works as it should. I switched everything to the way yours looked like just like you asked. the only thing it does not do it check for invalid inputs on the rows and columns. Besides that it it loops, prints, and works as it should.
