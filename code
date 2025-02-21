@@ -1,0 +1,54 @@
+from tkinter import N
+Continue = bool(True)    # loop the code
+Cinput = "y"
+A = [" $10 ", " $10 ", " $10 ", " $10 ", " $10 ", " $10 ", " $10 ", " $10",]
+B = [" $10 ", " $10 ", " $10 ", " $10 ", " $10 ", " $10 ", " $10 ", " $10",]      # seat cost
+C = [" $10 ", " $10 ", " $10 ", " $10 ", " $10 ", " $10 ", " $10 ", " $10",]
+D = [" $10 ", " $20 ", " $20 ", " $20 ", " $20 ", " $20 ", " $20 ", " $10",]
+E = [" $10 ", " $20 ", " $20 ", " $20 ", " $20 ", " $20 ", " $20 ", " $10",]
+F = [" $10 ", " $20 ", " $20 ", " $20 ", " $20 ", " $20 ", " $20 ", " $10",]
+G = [" $20 ", " $30 ", " $30 ", " $40 ", " $40 ", " $30 ", " $30 ", " $20",]
+H = [" $30 ", " $30 ", " $40 ", " $50 ", " $50 ", " $40 ", " $30 ", " $30",]
+I = [" $40 ", " $50 ", " $50 ", " $50 ", " $50 ", " $50 ", " $50 ", " $40",]
+def seats():  # function to print all seats
+  print ("".join(A))   # print seat costs
+  print ("".join(B))
+  print ("".join(C))
+  print ("".join(D))
+  print ("".join(E))
+  print ("".join(F))
+  print ("".join(G))
+  print ("".join(H))
+  print ("".join(I))
+seats()
+while Continue == True:  # loop
+  print ("please select a theatre row")
+  Linput = int(input())
+  print ("Please selecta a theatre column")   # inputs
+  Ninput = int(input()) - 1
+  print ("Invalid input try again")
+  if Linput == 1:
+    A[Ninput] = "  SO "   # find the row selected
+  elif Linput == (2):
+    B[Ninput] = "  SO "
+  elif Linput == (3):
+    C[Ninput] = "  SO "
+  elif Linput == (4):
+    D[Ninput] = "  SO "
+  elif Linput == (5):
+    E[Ninput] = " SO "
+  elif Linput == (6):
+    F[Ninput] = "  SO "
+  elif Linput == (7):
+    G[Ninput] = "  SO "
+  elif Linput == (8):
+    H[Ninput] = "  SO "
+  elif Linput == (9):
+    I[Ninput] = "  SO "
+  seats()  # print seats
+  print ("would you like to continue to buy tickets Y/N")  # if to end the code
+  Cinput = str(input())
+  if Cinput == "Y":
+    continue
+  elif Cinput == "N":
+    break
